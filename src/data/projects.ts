@@ -16,11 +16,11 @@ export const projects: Project[] = [
   {
     id: 'use-dev',
     title: 'UseDev',
-    image: './src/imagem/UseDev.png',
+    image: '/UseDev.png',
     gallery: [
-      './src/imagem/useimagem1.png',
-      './src/imagem/useimagem2.png',
-      './src/imagem/useimagem3.png',
+      '/UseDev1.png',
+      '/UseDev2.png',
+      '/UseDev3.png',
     ],
     tags: {
       pt: ['UX/UI Design', 'Auditoria de Usabilidade', 'Redesign de Jornada', 'Personas', 'Heurísticas', 'Priorização'],
@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     id: 'saber-rota',
     title: 'Sabor & Rota',
-    image: './src/imagem/SaborRota.png',
+    image: '/SaborRota.png',
     gallery: [],
     tags: {
       pt: ['UX/UI Designer', 'Consultora de Usabilidade', 'Consultoria de Redesign', 'Estudo de Caso com IA', 'Benchmarking Estratégico', 'User Flow', 'Diretrizes de UI', 'Arquitetura de Informação', 'Métricas de ROI'],
@@ -104,14 +104,14 @@ export const projects: Project[] = [
   {
     id: 'casamento',
     title: 'Casamento',
-    image: './src/imagem/Casamento.png',
+    image: '/Casamento.png',
     gallery: [
-      './src/imagem/casaimagem1.png',
-      './src/imagem/casaimagem2.png',
-      './src/imagem/casaimagem3.png',
-      './src/imagem/PaginaPrincipalIphone.png',
-      './src/imagem/PaginaPrincipalIphoneMenu.png',
-      './src/imagem/PaginaPrincipalNotebook.png'
+      '/Casamento1.png',
+      '/Casamento2.png',
+      '/Casamento3.png',
+      '/Casamento4.png',
+      '/PaginaPrincipalIphoneMenu.png',
+      '/PaginaPrincipalNotebook.png'
     ],
     tags: {
       pt: ['UX/UI Designer', 'Especialista em Acessibilidade', 'Redesign Estratégico', 'Landing Page de Alta Conversão', 'Layout Mobile-First', 'Avaliação Heurística', 'Reestruturação de Arquitetura', 'Validação por IA'],
@@ -153,11 +153,11 @@ export const projects: Project[] = [
   {
     id: 'p4build',
     title: 'P4Build',
-    image: './src/imagem/P4Build.png',
+    image: '/P4Build.png',
     gallery: [
-      './src/imagem/p4imagem1.png',
-      './src/imagem/p4imagem2.png',
-      './src/imagem/p4imagem3.png',
+      '/p4imagem1.png',
+      '/p4imagem2.png',
+      '/p4imagem3.png',
     ],
     tags: {
       pt: ['UX/UI Designer', 'Plataforma Colaborativa', 'Pesquisa Quantitativa', 'MVP', 'Design System Inicial', 'Protótipo Mobile Ágil', 'Arquitetura de Informação'],
