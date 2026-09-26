@@ -1,0 +1,10 @@
+{
+  "description": "Personal portfolio site featuring multilingual toggle, interactive boarding pass design, project showcases, skill animations, and contact links to boost professional visibility.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
