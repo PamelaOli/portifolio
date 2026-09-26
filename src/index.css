@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import 'tailwindcss';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root, html[data-theme="dark"] {
+  --bg: #080808;
+  --text: #f0f0f0;
+}
+
+html[data-theme="light"] {
+  --bg: #f5f0ff;
+  --text: #1a0a2e;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+/* Hero top bar: label + toggle */
+.hero-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+
+@media (max-width: 767px) {
+  .hero-topbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .hero-flight-label { display: none; }
+  .about-divider { display: none; }
+}
+
+/* Nav signs: horizontal on desktop, vertical on mobile */
+.nav-signs-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 24px);
+  padding: 0 8px;
+}
+
+@media (max-width: 767px) {
+  .nav-signs-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .nav-road-line { display: none; }
+}
+
+/* Boarding pass responsive visibility */
+.bp-desktop { display: flex; }
+.bp-mobile  { display: none; }
+
+@media (max-width: 767px) {
+  .bp-desktop { display: none !important; }
+  .bp-mobile  { display: flex !important; justify-content: center; }
+}
+
+html::-webkit-scrollbar { display: none; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes suitcase-bounce {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes tag-swing {
+  0%, 100% { transform: rotate(-8deg); }
+  50% { transform: rotate(8deg); }
+}
+
+@keyframes wheels-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sign-hover {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 28s linear infinite;
+}
+
+.marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 32s linear infinite;
+}
+
+.marquee-left:hover,
+.marquee-right:hover {
+  animation-play-state: paused;
+}
+
+.stamp-frame {
+  position: relative;
+  background: #fff;
+  padding: 10px 10px 40px 10px;
+}
+
+.stamp-frame::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 4px, #080808 4px) top left / 12px 12px,
+    #080808;
+  background-repeat: repeat;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.road-sign-arrow {
+  clip-path: polygon(0 15%, 75% 15%, 75% 0%, 100% 50%, 75% 100%, 75% 85%, 0 85%);
+}
+
+.road-sign-arrow-left {
+  clip-path: polygon(100% 15%, 25% 15%, 25% 0%, 0% 50%, 25% 100%, 25% 85%, 100% 85%);
+}
+
+.boarding-pass-mobile {
+  background: linear-gradient(135deg, #1a0a2e 0%, #0d0519 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(161, 104, 205, 0.3), 0 0 0 1px rgba(255,89,184,0.2);
+}
+
+.passport-book {
+  background: linear-gradient(135deg, #1a0a3e 0%, #0d0d1a 100%);
+  border-radius: 8px;
+  box-shadow: -8px 0 20px rgba(0,0,0,0.5), 8px 0 20px rgba(0,0,0,0.5), inset 2px 0 8px rgba(161,104,205,0.2);
+  border: 1px solid rgba(161,104,205,0.3);
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease forwards;
+}

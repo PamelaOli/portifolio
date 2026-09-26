@@ -1,0 +1,210 @@
+.nav-signs {
+  padding: 40px 24px;
+  overflow: hidden;
+}
+
+.nav-signs-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-signs-road {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 6px;
+  transform: translateY(-50%);
+  background: #2a2a2a;
+  z-index: 0;
+}
+
+.nav-signs-road-mark {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  transform: translateY(-50%);
+  background-image: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.15) 0px, rgba(255, 255, 255, 0.15) 30px, transparent 30px, transparent 54px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nav-signs-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 2vw, 24px);
+  position: relative;
+  z-index: 2;
+}
+
+.nav-signs-mobile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-signs-vertical-pole {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, #555 0%, #444 50%, #333 100%);
+  border-radius: 3px;
+  z-index: 0;
+}
+
+.nav-signs-pole-cap-top {
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  width: 16px;
+  height: 8px;
+  transform: translateX(-50%);
+  background: #555;
+  border-radius: 3px 3px 0 0;
+  z-index: 1;
+}
+
+.nav-signs-pole-cap-bottom {
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  width: 20px;
+  height: 8px;
+  transform: translateX(-50%);
+  background: #333;
+  border-radius: 0 0 4px 4px;
+  z-index: 1;
+}
+
+.nav-signs-slot {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.nav-signs-slot-connector {
+  position: absolute;
+  top: 50%;
+  width: 20%;
+  height: 4px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #555, #444);
+  z-index: 0;
+}
+
+.nav-signs-slot-connector--right {
+  left: 50%;
+}
+
+.nav-signs-slot-connector--left {
+  right: 50%;
+}
+
+.nav-signs-slot-content {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+
+.nav-signs-slot-content--right {
+  justify-content: flex-end;
+  padding-left: 0;
+  padding-right: 2%;
+}
+
+.nav-signs-slot-content--left {
+  justify-content: flex-start;
+  padding-left: 2%;
+  padding-right: 0;
+}
+
+.nav-signs-button {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.nav-signs-button:hover {
+  transform: scale(1.1);
+  filter: brightness(1.18);
+}
+
+.nav-signs-arrow {
+  width: 0;
+  height: 0;
+  border-top: clamp(18px, 2.5vw, 26px) solid transparent;
+  border-bottom: clamp(18px, 2.5vw, 26px) solid transparent;
+  filter: drop-shadow(2px 3px 8px rgba(255, 255, 255, 0.2));
+  flex-shrink: 0;
+}
+
+.nav-signs-arrow--right {
+  border-left: clamp(14px, 1.8vw, 22px) solid var(--sign-color, #ff59b8);
+}
+
+.nav-signs-arrow--left {
+  border-right: clamp(14px, 1.8vw, 22px) solid var(--sign-color, #ff59b8);
+}
+
+.nav-signs-card {
+  display: flex;
+  align-items: center;
+  background: var(--sign-color, #ff59b8);
+  box-shadow: 0 4px 20px rgba(255, 89, 184, 0.35);
+  border: 1px solid var(--sign-color, #ff59b8);
+  outline: 2px solid rgba(255, 255, 255, 0.07);
+  outline-offset: 2;
+}
+
+.nav-signs-card-desktop {
+  padding: clamp(8px, 1.2vw, 12px) clamp(12px, 1.8vw, 22px);
+  gap: clamp(8px, 1vw, 14px);
+}
+
+.nav-signs-card-mobile {
+  padding: 10px 16px;
+  gap: 10px;
+}
+
+.nav-signs-label {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nav-signs-distance {
+  font-family: 'Space Mono', monospace;
+  color: rgba(255, 255, 255, 0.55);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .nav-signs-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-signs-road,
+  .nav-signs-road-mark {
+    display: none;
+  }
+}

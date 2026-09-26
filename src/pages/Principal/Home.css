@@ -1,0 +1,89 @@
+.home-page {
+  min-height: 100vh;
+}
+
+.hero-section {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 48px) 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-orb--pink {
+  top: 10%;
+  left: 5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 89, 184, 0.06) 0%, transparent 70%);
+}
+
+.hero-orb--purple {
+  bottom: 15%;
+  right: 8%;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(161, 104, 205, 0.06) 0%, transparent 70%);
+}
+
+.hero-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+  margin-bottom: clamp(24px, 4vw, 48px);
+  position: relative;
+  z-index: 1;
+}
+
+.hero-flight-label {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(9px, 1vw, 11px);
+  color: #a168cd;
+  letter-spacing: 0.25em;
+  opacity: 0.8;
+}
+
+.hero-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-boarding-pass {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.page-footer {
+  border-top: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+  padding: 24px;
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 767px) {
+  .hero-topbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-flight-label {
+    display: none;
+  }
+}

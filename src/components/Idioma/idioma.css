@@ -1,0 +1,53 @@
+.language-toggle {
+  display: flex;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 89, 184, 0.2);
+  border-radius: 100px;
+  padding: 8px;
+  width: fit-content;
+  transition: background 0.2s ease;
+}
+
+html[data-theme="dark"] .language-toggle {
+  background: #4a4a4a;
+}
+
+html[data-theme="light"] .language-toggle {
+  background: #f5f0ff;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.language-button--active {
+  background: linear-gradient(135deg, #ff59b8, #a168cd);
+  color: #fff;
+}
+
+.language-button--inactive {
+  background: transparent;
+  color: #666;
+}
+
+.theme-language--dark {
+  background: #4a4a4a;
+  color: #ff59b8;
+}
+
+.theme-language--light {
+  background: #f5f0ff;
+  color: #a168cd;
+}

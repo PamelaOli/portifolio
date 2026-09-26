@@ -1,0 +1,68 @@
+.projects-section {
+  padding: 40px 24px;
+}
+
+.projects-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects-header-copy {
+  position: relative;
+}
+
+.projects-kicker {
+  margin-bottom: 8px;
+  font-size: 11px;
+  color: #ff59b8;
+  letter-spacing: 0.3em;
+  font-family: 'Space Mono', monospace;
+}
+
+.projects-title {
+  margin: 0;
+  font-size: 42px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.stamp-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform-origin: center bottom;
+}
+
+.stamp-button:hover {
+  transform: scale(1.05) translateY(-6px);
+  filter: drop-shadow(0 16px 32px rgba(255, 89, 184, 0.35));
+}
+
+.stamp-svg {
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(255, 89, 184, 0.15));
+}
+
+.stamp-title {
+  margin-top: 14px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}

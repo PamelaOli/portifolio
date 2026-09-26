@@ -1,0 +1,111 @@
+.contact-section {
+  padding: 40px 24px;
+}
+
+.contact-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 32px;
+}
+
+.contact-kicker {
+  margin-bottom: 8px;
+  font-size: 11px;
+  color: #ff59b8;
+  letter-spacing: 0.3em;
+  font-family: 'Space Mono', monospace;
+}
+
+.contact-title {
+  margin: 0 0 16px;
+  font-size: 42px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.contact-description {
+  max-width: 480px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-illustration {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 100px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.contact-button--primary {
+  background: linear-gradient(135deg, #ff59b8, #a168cd);
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(255, 89, 184, 0.35);
+}
+
+.contact-button--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(255, 89, 184, 0.5);
+}
+
+.contact-button--secondary {
+  background: transparent;
+  border: 2px solid rgba(255, 89, 184, 0.4);
+  color: var(--contact-linkedin-text, #ff59b8);
+}
+
+.contact-button--secondary:hover {
+  border-color: #ff59b8;
+  background: rgba(255, 89, 184, 0.08);
+}
+
+.contact-linkedin-icon {
+  width: 18px;
+  height: 18px;
+  fill: #ff59b8;
+}
+
+@media (max-width: 640px) {
+  .contact-section {
+    padding: 32px 18px;
+  }
+
+  .contact-kicker {
+    letter-spacing: 0.2em;
+  }
+
+  .contact-title {
+    font-size: 34px;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+}

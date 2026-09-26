@@ -1,0 +1,28 @@
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid rgba(255, 89, 184, 0.3);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.theme-toggle--dark {
+  background: #4a4a4a;
+  color: #ff59b8;
+}
+
+.theme-toggle--light {
+  background: #f5f0ff;
+  color: #a168cd;
+
+}
+
+.theme-toggle:hover {
+  background: linear-gradient(135deg, rgba(255, 89, 184, 0.15), rgba(161, 104, 205, 0.15));
+  border-color: #ff59b8;
+}
