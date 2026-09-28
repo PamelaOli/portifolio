@@ -1,8 +1,12 @@
+import useDevImage from '../imagem/UseDev.png';
+import saborRotaImage from '../imagem/SaborRota.png';
+import casamentoImage from '../imagem/Casamento.png';
+import p4buildImage from '../imagem/P4Build.png';
+
 export interface Project {
   id: string;
   title: string;
   image: string;
-  gallery: string[];
   tags: { pt: string[]; en: string[]; es: string[] };
   description: { pt: string; en: string; es: string };
   challenge: { pt: string; en: string; es: string };
@@ -16,12 +20,7 @@ export const projects: Project[] = [
   {
     id: 'use-dev',
     title: 'UseDev',
-    image: '/UseDev.png',
-    gallery: [
-      '/UseDev1.png',
-      '/UseDev2.png',
-      '/UseDev3.png',
-    ],
+    image: useDevImage,
     tags: {
       pt: ['UX/UI Design', 'Auditoria de Usabilidade', 'Redesign de Jornada', 'Personas', 'Heurísticas', 'Priorização'],
       en: ['UX/UI Design', 'Usability Audit', 'Journey Redesign', 'Personas', 'Heuristics', 'Prioritization'],
@@ -62,8 +61,7 @@ export const projects: Project[] = [
   {
     id: 'saber-rota',
     title: 'Sabor & Rota',
-    image: '/SaborRota.png',
-    gallery: [],
+    image: saborRotaImage,
     tags: {
       pt: ['UX/UI Designer', 'Consultora de Usabilidade', 'Consultoria de Redesign', 'Estudo de Caso com IA', 'Benchmarking Estratégico', 'User Flow', 'Diretrizes de UI', 'Arquitetura de Informação', 'Métricas de ROI'],
       en: ['UX Research', 'Service Design', 'Mobile App', 'Route Experience', 'Product Strategy', 'Design System'],
@@ -104,15 +102,7 @@ export const projects: Project[] = [
   {
     id: 'casamento',
     title: 'Casamento',
-    image: '/Casamento.png',
-    gallery: [
-      '/Casamento1.png',
-      '/Casamento2.png',
-      '/Casamento3.png',
-      '/Casamento4.png',
-      '/PaginaPrincipalIphoneMenu.png',
-      '/PaginaPrincipalNotebook.png'
-    ],
+    image: casamentoImage,
     tags: {
       pt: ['UX/UI Designer', 'Especialista em Acessibilidade', 'Redesign Estratégico', 'Landing Page de Alta Conversão', 'Layout Mobile-First', 'Avaliação Heurística', 'Reestruturação de Arquitetura', 'Validação por IA'],
       en: ['Wedding UX', 'Accessibility', 'Strategic Redesign', 'High-conversion Landing Page', 'Mobile-first Layout', 'Heuristic Evaluation', 'Information Architecture', 'AI Validation'],
@@ -153,12 +143,7 @@ export const projects: Project[] = [
   {
     id: 'p4build',
     title: 'P4Build',
-    image: '/P4Build.png',
-    gallery: [
-      '/p4imagem1.png',
-      '/p4imagem2.png',
-      '/p4imagem3.png',
-    ],
+    image: 'p4buildImage',
     tags: {
       pt: ['UX/UI Designer', 'Plataforma Colaborativa', 'Pesquisa Quantitativa', 'MVP', 'Design System Inicial', 'Protótipo Mobile Ágil', 'Arquitetura de Informação'],
       en: ['Product Design', 'Collaborative Platform', 'Quantitative Research', 'MVP', 'Initial Design System', 'Rapid Mobile Prototyping', 'Information Architecture'],
