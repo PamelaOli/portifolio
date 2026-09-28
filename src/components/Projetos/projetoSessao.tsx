@@ -111,6 +111,9 @@ export default function ProjectsSection() {
             <h2 className="projects-title" style={{ color: c.heading }}>
               {tr.projectsTitle}
             </h2>
+             <p className="projects-description" style={{ color: c.textMuted }}>
+              {tr.projectsDesc}
+            </p>
           </div>
         </div>
 

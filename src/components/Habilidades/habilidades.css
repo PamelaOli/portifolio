@@ -23,6 +23,14 @@
   font-weight: 800;
 }
 
+.skills-description {
+  max-width: 480px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+
 .skills-highway {
   width: 100%;
   background: #252525;

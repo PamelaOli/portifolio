@@ -23,7 +23,6 @@ export default function ProjectDetail() {
 
   const project = projects.find(p => p.id === id);
   const projectTags = project?.tags?.[lang] ?? [];
-  const projectGallery = project?.gallery?.length ? project.gallery : [project?.image ?? ''];
 
   if (!project) {
     return (
@@ -76,64 +75,17 @@ export default function ProjectDetail() {
           {project.description[lang]}
         </p>
 
-        <div className="project-detail-gallery" aria-label="Desenvolvimento do projeto">
-          {projectGallery.map((image, index) => (
-            <div key={`${project?.id ?? 'project'}-${index}`} className="project-detail-gallery-item">
-              <img src={image} alt={`${project?.title ?? 'Projeto'} - ${index + 1}`} className="project-detail-gallery-image" />
-            </div>
-          ))}
-        </div>
-
-        <div className="project-detail-block">
-          <h2 className="project-detail-block-title" style={{ color: c.heading }}>
-            <span className="project-detail-block-title-mark">✦</span>
-            {tr.projectChallenge}
-          </h2>
-          <p className="project-detail-challenge" style={{ color: c.textSub }}>
-            {project.challenge[lang]}
-          </p>
-        </div>
-
-        <div className="project-detail-block">
-          <h2 className="project-detail-block-title" style={{ color: c.heading }}>
-            <span className="project-detail-block-title-mark">✦</span>
-            {tr.projectResearch}
-          </h2>
-          <p className="project-detail-challenge" style={{ color: c.textSub }}>
-            {project.research[lang]}
-          </p>
-        </div>
-
-        <div className="project-detail-block">
-          <h2 className="project-detail-block-title" style={{ color: c.heading }}>
-            <span className="project-detail-block-title-mark">✦</span>
-            {tr.projectDesign}
-          </h2>
-          <p className="project-detail-challenge" style={{ color: c.textSub }}>
-            {project.design[lang]}
-          </p>
-        </div>
-
-        <div className="project-detail-block">
-          <h2 className="project-detail-block-title" style={{ color: c.heading }}>
-            <span className="project-detail-block-title-mark">✦</span>
-            {tr.projectSolution}
-          </h2>
-          <p className="project-detail-challenge" style={{ color: c.textSub }}>
-            {project.solution[lang]}
-          </p>
-        </div>
-
-        <div className="project-detail-block">
-          <h2 className="project-detail-block-title" style={{ color: c.heading }}>
-            <span className="project-detail-block-title-mark">✦</span>
-            {tr.projectResults}
-          </h2>
-          <p className="project-detail-challenge" style={{ color: c.textSub }}>
-            {project.results[lang]}
-          </p>
-        </div>
-
+        {project.sections.map(section => (
+          <div key={section.key} className="project-detail-block">
+            <h2 className="project-detail-block-title" style={{ color: c.heading }}>
+              <span className="project-detail-block-title-mark">✦</span>
+              {tr[section.key]}
+            </h2>
+            <p className="project-detail-challenge" style={{ color: c.textSub }}>
+              {section.body[lang]}
+            </p>
+          </div>
+        ))}
       </div>
 
       <footer className="project-detail-footer" style={{ borderTop: `1px solid ${c.borderSubtle}`, color: c.footerText }}>

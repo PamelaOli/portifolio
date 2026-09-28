@@ -29,6 +29,9 @@ export default function SkillsHighway() {
         <h2 className="skills-title" style={{ color: c.heading }}>
           {tr.skillsTitle}
         </h2>
+        <p className="skills-description" style={{ color: c.textMuted }}>
+          {tr.skillsDesc}
+        </p>
       </div>
 
       <div className="skills-highway">
