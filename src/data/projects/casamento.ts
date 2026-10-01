@@ -1,4 +1,4 @@
-import casamentoImage from '../../imagem/Casamento.png';
+import casamentoImage from 'portifolioPam/src/imagem/Casamento.png';
 import type { Project } from '../projects';
 
 const casamentoProject: Project = {
