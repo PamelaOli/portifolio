@@ -3,7 +3,6 @@ import type { Project } from '../projects';
 const p4buildProject: Project = {
   id: 'p4build',
   title: 'P4Build',
-  image: '../../imagem/P4Build.png',
   tags: {
     pt: ['PRD', 'Design System em React', 'Squads Multidisciplinares', 'Arquitetura'],
     en: ['PRD', 'React Design System', 'Cross-functional Squads', 'Architecture'],

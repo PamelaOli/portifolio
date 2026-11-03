@@ -53,7 +53,6 @@ export default function ProjectDetail() {
   return (
     <div className="project-detail-page">
       <div className="project-detail-hero">
-        <img src={project.image} alt={project.title} className="project-detail-hero-image" />
         <div className="project-detail-hero-overlay" />
 
         <div className="project-detail-topbar">

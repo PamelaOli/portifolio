@@ -3,7 +3,6 @@ import type { Project } from '../projects';
 const casamentoProject: Project = {
   id: 'casamento-app',
   title: 'Casamento',
-  image: '../../imagem/Casamento.png',
   tags: {
     pt: ['Mobile First', 'Fluxo de Presentes', 'Gestão de Convidados', 'UI Simples', 'IA'],
     en: ['Mobile First', 'Gift Registry', 'Guest Management', 'Simple UI', 'AI'],

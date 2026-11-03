@@ -13,11 +13,6 @@ function PassportBook({ tr }: { tr: Translation }) {
           <div className="passport-title">PASSAPORTE</div>
           <div className="passport-avatar">✦</div>
         </div>
-
-        <div className="passport-photo">
-          <img src={perfilImage} alt="Pâmela Oliveira" />
-        </div>
-
         <div className="passport-fields">
           {[
             { label: 'NOME / NAME', value: 'OLIVEIRA, PÂMELA' },

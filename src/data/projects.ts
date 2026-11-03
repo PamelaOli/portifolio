@@ -49,7 +49,6 @@ export interface ProjectMetadata {
 export interface Project {
   id: string;
   title: string;
-  image: string;
   tags: Record<Lang, string[]>;
   skillsUsed: Record<Lang, string[]>;
   description: Record<Lang, string>;

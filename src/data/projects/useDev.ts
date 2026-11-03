@@ -3,7 +3,6 @@ import type { Project } from '../projects';
 const useDevProject: Project = {
   id: 'use-dev',
   title: 'UseDev — E-commerce',
-  image: '../../imagem/UseDev.png',
   tags: {
     pt: ['Avaliação Heurística', 'Checkout UX', 'Matriz de priorização', 'IA'],
     en: ['Heuristic Evaluation', 'Checkout UX', 'Prioritization Matrix', 'AI'],

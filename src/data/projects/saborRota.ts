@@ -3,7 +3,6 @@ import type { Project } from '../projects';
 const saborRotaProject: Project = {
   id: 'sabor-e-rota',
   title: 'Sabor e Rota',
-  image: '../../imagem/SaborRota.png',
   tags: {
     pt: ['Benchmarking', 'Card Sorting', 'Taxonomia', 'Acessibilidade WCAG'],
     en: ['Benchmarking', 'Card Sorting', 'Taxonomy', 'WCAG Accessibility'],
