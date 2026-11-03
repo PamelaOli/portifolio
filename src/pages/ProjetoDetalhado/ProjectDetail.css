@@ -48,12 +48,6 @@
   object-fit: cover;
 }
 
-.project-detail-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(8, 8, 8, 0.3) 0%, rgba(8, 8, 8, 0.95) 100%);
-}
-
 .project-detail-topbar {
   position: absolute;
   top: 80px;
@@ -122,6 +116,10 @@ html[data-theme="light"] .project-detail-back-button {
   font-weight: 900;
   color: #fff;
   line-height: 1.05;
+}
+
+html[data-theme="light"] .project-detail-title {
+  color: rgb(26, 10, 46);
 }
 
 .project-detail-content {
