@@ -44,5 +44,6 @@ export function useThemeColors() {
     borderSubtle: dark ? 'rgba(255,89,184,0.1)' : 'rgba(161,104,205,0.2)',
     footerText: dark ? '#444' : '#7a6a8a',
     linkedinText: dark ? '#fff' : '#1a0a2e',
+    behanceText: dark ? '#fff' : '#1a0a2e',
   };
 }

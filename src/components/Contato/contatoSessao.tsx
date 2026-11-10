@@ -66,22 +66,27 @@ export default function ContactSection() {
         </div>
 
         <div className="contact-actions">
-          <a href="mailto:pamyoli02@gmail.com" className="contact-button contact-button--primary">
-            <span>✉</span>
-            <span>E-MAIL: pamyoli02@gmail.com</span>
+          <a href="mailto:pamyoli02@gmail.com" className="contact-button contact-button--secondary">
+            <span>{tr.contactEmail}</span>
           </a>
 
           <a
-            href={`https://www.linkedin.com/in/pamela-oliveira-tec/}`}
+            href={`https://www.behance.net/pmelaoliveira34`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-button contact-button--secondary"
+            style={{ ['--contact-behance-text' as string]: c.behanceText }}
+          >
+            <span>{tr.contactBehance}</span>
+          </a>
+
+          <a
+            href={`https://www.linkedin.com/in/pamela-oliveira-tec/`}
             target="_blank"
             rel="noopener noreferrer"
             className="contact-button contact-button--secondary"
             style={{ ['--contact-linkedin-text' as string]: c.linkedinText }}
           >
-            <svg className="contact-linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-              <circle cx="4" cy="4" r="2" />
-            </svg>
             <span>{tr.contactLinkedin}</span>
           </a>
         </div>

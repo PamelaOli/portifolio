@@ -60,36 +60,18 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease,
-    background 0.2s ease;
-}
-
-.contact-button--primary {
-  background: linear-gradient(135deg, #ff59b8, #a168cd);
-  color: #fff;
-  box-shadow: 0 4px 24px rgba(255, 89, 184, 0.35);
-}
-
-.contact-button--primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 32px rgba(255, 89, 184, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  background: 0.2s ease;
 }
 
 .contact-button--secondary {
   background: transparent;
   border: 2px solid rgba(255, 89, 184, 0.4);
-  color: var(--contact-linkedin-text, #ff59b8);
 }
 
 .contact-button--secondary:hover {
   border-color: #ff59b8;
   background: rgba(255, 89, 184, 0.08);
-}
-
-.contact-linkedin-icon {
-  width: 18px;
-  height: 18px;
-  fill: #ff59b8;
 }
 
 @media (max-width: 640px) {
