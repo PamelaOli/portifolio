@@ -264,7 +264,9 @@ html[data-theme="light"] .project-detail-title {
   margin-bottom: 60px;
 }
 
-.project-detail-challenge {
+.project-detail-challenge,
+.project-detail-step-text,
+.project-detail-custom-text {
   white-space: pre-line;
 }
 

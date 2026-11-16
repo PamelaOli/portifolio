@@ -1,7 +1,6 @@
 import useDevProject from './projects/useDev';
-import saborRotaProject from './projects/saborRota';
+import luminaProject from './projects/lumina';
 import casamentoProject from './projects/casamento';
-import p4buildProject from './projects/p4build';
 
 export type Lang = 'pt' | 'en' | 'es';
 
@@ -58,9 +57,8 @@ export interface Project {
 
 export const projects: Project[] = [
   useDevProject,
-  saborRotaProject,
+  luminaProject,
   casamentoProject,
-  p4buildProject,
 ];
 
-export { useDevProject, saborRotaProject, casamentoProject, p4buildProject };
+export { useDevProject, luminaProject, casamentoProject};
