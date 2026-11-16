@@ -49,7 +49,7 @@ export interface ProjectMetadata {
 export interface Project {
   id: string;
   title: string;
-  tags: Record<Lang, string[]>;
+  behanceUrl: string;
   skillsUsed: Record<Lang, string[]>;
   description: Record<Lang, string>;
   metadata?: ProjectMetadata;

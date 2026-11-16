@@ -22,7 +22,6 @@ export default function ProjectDetail() {
   }, [id]);
 
   const project = projects.find(p => p.id === id);
-  const projectTags = project?.tags?.[lang] ?? [];
 
   const getSectionTitle = (section: ProjectSection) => {
     const translationKey = section.key as keyof typeof tr;
@@ -72,13 +71,16 @@ export default function ProjectDetail() {
       </div>
 
       <div className="project-detail-content">
-        <div className="project-detail-tags">
-          {projectTags.map(tag => (
-            <span key={tag} className="project-detail-tag">
-              {tag}
-            </span>
-          ))}
-        </div>
+
+        <a
+          className="project-detail-behance-link"
+          href={project.behanceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {tr.viewOnBehance}
+          <span aria-hidden="true"></span>
+        </a>
 
         <p className="project-detail-description" style={{ color: c.textSub }}>
           {project.description[lang]}

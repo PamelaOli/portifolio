@@ -3,15 +3,11 @@ import type { Project } from '../projects';
 const p4buildProject: Project = {
   id: 'p4build',
   title: 'P4Build',
-  tags: {
-    pt: ['PRD', 'Design System em React', 'Squads Multidisciplinares', 'Arquitetura'],
-    en: ['PRD', 'React Design System', 'Cross-functional Squads', 'Architecture'],
-    es: ['PRD', 'Design System en React', 'Squads Multidisciplinarios', 'Arquitectura'],
-  },
+  behanceUrl: 'https://www.behance.net/pmelaoliveira34',
   skillsUsed: {
-    pt: ['Comunicação', 'Colaboração', 'Organização', 'Gestão de tempo', 'Resolução de problemas', 'IA', 'Aprendizado'],
-    en: ['Communication', 'Collaboration', 'Organization', 'Time Management', 'Problem Solving', 'AI', 'Learning'],
-    es: ['Comunicación', 'Colaboración', 'Organización', 'Gestión del Tiempo', 'Resolución de Problemas', 'IA', 'Aprendizaje'],
+    pt: ['PRD', 'Design System em React', 'Squads Multidisciplinares', 'Arquitetura', 'Comunicação', 'Colaboração', 'Organização', 'Gestão de tempo', 'Resolução de problemas', 'IA', 'Aprendizado'],
+    en: ['PRD', 'React Design System', 'Cross-functional Squads', 'Architecture', 'Communication', 'Collaboration', 'Organization', 'Time Management', 'Problem Solving', 'AI', 'Learning'],
+    es: ['PRD', 'Design System en React', 'Squads Multidisciplinarios', 'Arquitectura', 'Comunicación', 'Colaboración', 'Organización', 'Gestión del Tiempo', 'Resolución de Problemas', 'IA', 'Aprendizaje'],
   },
   description: {
     pt: 'Mapeamento de papéis, criação de componentes em React e alinhamento do PRD entre UX, Product Management e Engenharia para comunidade tech.',

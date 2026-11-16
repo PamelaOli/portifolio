@@ -125,7 +125,32 @@ html[data-theme="light"] .project-detail-title {
 .project-detail-content {
   max-width: 860px;
   margin: 0 auto;
-  padding: 60px 32px 120px;
+  padding: 12px 32px 120px;
+}
+
+.project-detail-behance-link {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 48px;
+  padding: 12px 22px;
+  border: 1px solid rgba(255, 89, 184, 0.4);
+  border-radius: 100px;
+  background: rgba(255, 89, 184, 0.1);
+  color: #a168cd;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-detail-behance-link:hover {
+  background: rgba(255, 89, 184, 0.2);
+  transform: translateY(-2px);
+}
+
+.project-detail-behance-link:focus-visible {
+  outline: 2px solid #ff59b8;
+  outline-offset: 3px;
 }
 
 .project-detail-meta {
@@ -237,6 +262,10 @@ html[data-theme="light"] .project-detail-title {
 
 .project-detail-block {
   margin-bottom: 60px;
+}
+
+.project-detail-challenge {
+  white-space: pre-line;
 }
 
 .project-detail-block-title {

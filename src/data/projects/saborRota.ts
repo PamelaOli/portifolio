@@ -3,19 +3,15 @@ import type { Project } from '../projects';
 const saborRotaProject: Project = {
   id: 'sabor-e-rota',
   title: 'Sabor e Rota',
-  tags: {
-    pt: ['Benchmarking', 'Card Sorting', 'Taxonomia', 'Acessibilidade WCAG'],
-    en: ['Benchmarking', 'Card Sorting', 'Taxonomy', 'WCAG Accessibility'],
-    es: ['Benchmarking', 'Card Sorting', 'Taxonomía', 'Accesibilidad WCAG'],
-  },
+  behanceUrl: 'https://www.behance.net/pmelaoliveira34',
   skillsUsed: {
-    pt: ['User Research', 'Acessibilidade', 'Arquitetura da informação',
+    pt: ['Benchmarking', 'Card Sorting', 'User Research', 'Acessibilidade', 'Arquitetura da informação',
       'Empatia', 'Criatividade', 'Aprendizado', 'IA', 'Organização'
     ],
-    en: ['User Research', 'Accessibility', 'Information Architecture',
+    en: ['Benchmarking', 'Card Sorting', 'User Research', 'Accessibility', 'Information Architecture',
       'Empathy', 'Creativity', 'Learning', 'AI', 'Organization'
     ],
-    es: ['Investigación de Usuarios', 'Accesibilidad', 'Arquitectura de Información',
+    es: ['Benchmarking', 'Card Sorting', 'Investigación de Usuarios', 'Accesibilidad', 'Arquitectura de Información',
       'Empatía', 'Creatividad', 'Aprendizaje', 'IA', 'Organización'
     ]
   },

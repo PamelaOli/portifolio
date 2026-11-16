@@ -3,19 +3,15 @@ import type { Project } from '../projects';
 const useDevProject: Project = {
   id: 'use-dev',
   title: 'UseDev — E-commerce',
-  tags: {
-    pt: ['Avaliação Heurística', 'Checkout UX', 'Matriz de priorização', 'IA'],
-    en: ['Heuristic Evaluation', 'Checkout UX', 'Prioritization Matrix', 'AI'],
-    es: ['Evaluación Heurística', 'Checkout UX', 'Matriz de Priorización', 'IA'],
-  },
+  behanceUrl: 'https://www.behance.net/pmelaoliveira34',
   skillsUsed: {
-    pt: ['User Research', 'Acessibilidade', 'Interfaces', 'Design Responsivo',
+    pt: ['Avaliação Heurística', 'Matriz de priorização', 'IA', 'User Research', 'Acessibilidade', 'Interfaces', 'Design Responsivo',
       'Resolução de problemas', 'Empatia', 'Comunicação', 'Colaboração', 'Organização'
     ],
-    en: ['User Research', 'Accessibility', 'Interfaces', 'Responsive Design',
+    en: ['Heuristic Evaluation', 'Prioritization Matrix', 'AI', 'User Research', 'Accessibility', 'Interfaces', 'Responsive Design',
       'Problem Solving', 'Empathy', 'Communication', 'Collaboration', 'Organization'
     ],
-    es: ['User Research', 'Accesibilidad', 'Interfaces', 'Diseño Responsivo',
+    es: ['Evaluación Heurística', 'Matriz de Priorización', 'IA', 'User Research', 'Accesibilidad', 'Interfaces', 'Diseño Responsivo',
       'Resolución de Problemas', 'Empatía', 'Comunicación', 'Colaboración', 'Organización'
     ]
   },
