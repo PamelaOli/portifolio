@@ -171,7 +171,7 @@ export default function ProjectDetail() {
                 <div className="project-detail-step-list">
                   {section.subsections.map((subsection, index) => (
                     <div key={`${section.key}-subsection-${index}`} className="project-detail-step">
-                      <div className="project-detail-step-number">{String(index + 1).padStart(2, '0')}</div>
+                      <div className="project-detail-step-number"></div>
                       <div>
                         {subsection.subtitle?.[lang] && (
                           <h3 className="project-detail-subsection-title" style={{ color: c.heading }}>
