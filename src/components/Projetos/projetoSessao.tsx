@@ -11,6 +11,15 @@ const PERF_R = 6;
 const PERF_STEP = 16;
 const BORDER = 14;
 
+type StampArtwork = 'research' | 'redesign' | 'responsive';
+
+const artworkByProjectId: Record<string, StampArtwork> = {
+  'use-dev': 'research',
+  'casamento-app': 'redesign',
+  lumina: 'responsive',
+  p4build: 'responsive',
+};
+
 function generateHoles(w: number, h: number, r: number, step: number) {
   const holes: { cx: number; cy: number }[] = [];
 
@@ -35,6 +44,7 @@ function StampCard({ project, onClick }: {
   const innerY = BORDER;
   const innerW = STAMP_W - BORDER * 2;
   const innerH = STAMP_H - BORDER * 2 - 28;
+  const artwork = artworkByProjectId[project.id] ?? 'research';
 
   return (
     <button onClick={onClick} className="stamp-button">
@@ -43,6 +53,8 @@ function StampCard({ project, onClick }: {
         height={STAMP_H}
         viewBox={`0 0 ${STAMP_W} ${STAMP_H}`}
         className="stamp-svg"
+        aria-hidden="true"
+        focusable="false"
       >
         <defs>
           <mask id={maskId}>
@@ -69,15 +81,41 @@ function StampCard({ project, onClick }: {
           opacity="0.35"
         />
 
-        <image
-          href={project.image}
-          x={innerX}
-          y={innerY}
-          width={innerW}
-          height={innerH}
-          preserveAspectRatio="xMidYMid slice"
-          clipPath={`url(#img-clip-${project.id})`}
-        />
+        <g
+          className="stamp-artwork"
+          fill="none"
+          stroke="#a168cd"
+          strokeWidth="3.25"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          {artwork === 'research' && (
+            <>
+              <circle cx="94" cy="91" r="31" />
+              <path d="m116 114 23 23" stroke="#ff59b8" />
+              <path d="M81 91h26M94 78v26" opacity="0.55" />
+              <path d="M57 55h12M125 54h12M58 127h12" opacity="0.45" />
+            </>
+          )}
+
+          {artwork === 'redesign' && (
+            <>
+              <path d="m73 119 42-48 18 16-42 48-23 7 5-23Z" />
+              <path d="m106 81 18 16M73 119l18 16" stroke="#ff59b8" />
+              <path d="m68 147 16-5M61 61h27M61 69h18" opacity="0.5" />
+            </>
+          )}
+
+          {artwork === 'responsive' && (
+            <>
+              <rect x="42" y="69" width="91" height="65" rx="4" />
+              <path d="M36 143h103l-7 8H43l-7-8Z" />
+              <rect x="145" y="83" width="27" height="52" rx="4" stroke="#ff59b8" />
+              <path d="M49 78h77M49 87h30M49 95h19M155 91h7M155 98h7" opacity="0.6" />
+              <circle cx="158.5" cy="128" r="1" stroke="#ff59b8" />
+            </>
+          )}
+        </g>
 
         <rect x={innerX} y={innerY + innerH} width={innerW} height={28} fill="#fff" />
         <text

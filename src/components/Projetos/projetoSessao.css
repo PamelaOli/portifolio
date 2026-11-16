@@ -46,6 +46,7 @@
 }
 
 .stamp-button {
+  width: min(210px, calc(100vw - 48px));
   background: none;
   border: none;
   cursor: pointer;
@@ -62,7 +63,13 @@
 
 .stamp-svg {
   display: block;
+  width: 100%;
+  height: auto;
   filter: drop-shadow(0 4px 12px rgba(255, 89, 184, 0.15));
+}
+
+.stamp-artwork > * {
+  vector-effect: non-scaling-stroke;
 }
 
 .stamp-title {

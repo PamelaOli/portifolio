@@ -55,7 +55,10 @@ export default function ProjectDetail() {
         <div className="project-detail-hero-overlay" />
 
         <div className="project-detail-topbar">
-          <button className="project-detail-back-button" onClick={() => navigate('/')}>
+          <button
+            className="project-detail-back-button"
+            onClick={() => navigate('/', { state: 'scroll-to-projects' })}
+          >
             {tr.backHome}
           </button>
           <div className="project-detail-controls">

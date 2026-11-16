@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import LanguageToggle from '../../components/Idioma/idioma';
 import ThemeToggle from '../../components/Tema/trocaDeTema';
 import BoardingPass from '../../components/CartaoEmbarque/cartaoEmbarque';
@@ -11,6 +13,19 @@ import './Home.css';
 
 export default function Home() {
   const c = useThemeColors();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.state !== 'scroll-to-projects') return;
+
+    const frame = window.requestAnimationFrame(() => {
+      document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+      navigate(location.pathname, { replace: true, state: null });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [location.pathname, location.state, navigate]);
 
   return (
     <div className="home-page">

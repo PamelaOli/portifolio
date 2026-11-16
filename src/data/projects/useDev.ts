@@ -2,7 +2,7 @@ import type { Project } from '../projects';
 
 const useDevProject: Project = {
   id: 'use-dev',
-  title: 'UseDev — Da dúvida à decisão',
+  title: 'UseDev',
   behanceUrl: 'https://www.behance.net/gallery/258588027/UseDev-Da-duvida-a-decisao',
   skillsUsed: {
     pt: ['Avaliação Heurística', 'Matriz de priorização', 'IA', 'User Research', 'Acessibilidade',
